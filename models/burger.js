@@ -5,7 +5,7 @@ var burger = {
 //Select all burgers from database.
     all: function(cb) {
         orm.all("burgers", function(res) {
-            cb(res);
+        cb(res);
         });
     },
 
