@@ -14,11 +14,12 @@ if (process.env.JAWSDB_URL) {
 else {
   //else use localhost database for local development.
   //MySQL password is passed into connection.js from the .env file using the dotenv npm package.
-    var connection = mysql.createConnection({
+  var connection = mysql.createConnection({
+      
     host: "localhost",
     port: 3306,
-    user: "root",
-    password: process.env.MYSQL_PASSWORD,
+    user: "foo",
+    password: "bar",
     database: "burger_db"
     });
 }
